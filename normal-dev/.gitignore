@@ -1,0 +1,418 @@
+# ============================================
+# Python
+# ============================================
+
+# uv 环境和依赖
+.venv/
+venv/
+ENV/
+env/
+.conda/
+uv.lock
+.python-version
+
+# pip / poetry / setuptools
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+.eggs/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+MANIFEST
+
+# Poetry
+poetry.lock
+poetry.core.toml.backup
+
+# PIPENV
+Pipfile.lock
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============================================
+# Java / Maven / Gradle
+# ============================================
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code Java
+.vscode/
+*.class
+
+# Log files
+*.log
+
+# ============================================
+# Go
+# ============================================
+
+# Go 编译产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go 工作区和缓存
+go.work
+go.work.sum
+
+# GOPATH 本地目录（bin/pkg 是本地构建缓存，不应上传）
+# 注意：只有使用了 GOPATH 模式时才需要忽略
+# 如果使用 Go Modules（推荐），源码目录不需要忽略
+go/bin/
+go/pkg/
+
+# 依赖下载（go mod download 下载的内容）
+# 注意：go.mod 和 go.sum 应该保留在仓库中
+# 但 vendor/ 目录可以忽略（除非你使用 vendor 模式）
+vendor/
+
+# Go 覆盖率
+*.coverprofile
+coverage.html
+coverage.out
+
+# Go 测试缓存
+.test
+
+# Delve 调试器
+.debug
+
+# Air 热重载
+tmp/
+.air.toml
+
+# GoLand
+.idea/
+*.iml
+
+# ============================================
+# C / C++
+# ============================================
+
+# 编译产物
+*.o
+*.obj
+*.ko
+*.elf
+*.d
+*.su
+*.i
+*.ii
+*.s
+*.S
+
+# 可执行文件
+*.out
+*.app
+*.so
+*.dylib
+*.dll
+
+# 静态库
+*.a
+*.lib
+*.la
+*.lo
+
+# 构建目录
+cmake-build-*/
+build/
+Build/
+out/
+
+# CMake 缓存
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Make 生成的依赖文件
+*.d
+
+# 调试文件
+*.dSYM/
+*.debug
+*.gch
+*.pch
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.vcxproj.user
+ipch/
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.pdb
+
+# CLion
+.idea/
+cmake-build-*/
+
+# ============================================
+# Node.js（未来可能用到）
+# ============================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 构建产物
+dist/
+.next/
+out/
+.nuxt/
+.vuepress/dist/
+.serverless/
+
+# 框架缓存
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# 包管理锁文件（团队统一后可取消忽略）
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+
+# ============================================
+# Rust（未来可能用到）
+# ============================================
+
+target/
+**/*.rs.bk
+Cargo.lock    # 库项目忽略，二进制项目可保留
+cargo-env
+
+# ============================================
+# 数据科学与机器学习
+# ============================================
+
+# 数据集文件（通常很大不适合 git）
+data/
+dataset/
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ML 实验
+mlruns/
+runs/
+lightning_logs/
+wandb/
+.tensorboard/
+
+# ============================================
+# 操作系统相关
+# ============================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ============================================
+# 通用配置和临时文件
+# ============================================
+
+# 环境变量（包含敏感信息）
+.env
+.env.local
+.env.*.local
+*.env
+
+# 备份文件
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 日志
+logs/
+*.log
+
+# 压缩文件
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# IDE 和编辑器
+# ============================================
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ============================================
+# 项目特定（根据需要添加）
+# ============================================
+
+# 上传的文件
+uploads/
+storage/
+public/uploads/
+
+# 生成文件
+generated/
+output/
+
+# 本地配置
+config.local.*
+settings.local.*
